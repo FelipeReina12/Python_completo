@@ -106,6 +106,11 @@ print(texto_1.find("Java"))  # Devuelve -1 porque la palabra "Java" no se encuen
 texto_2 = "Python es un lenguaje de programación muy popular. Python es fácil de aprender."
 print(texto_2.count("Python"))  # Devuelve 2 porque la palabra "Python" aparece dos veces en el texto
 
+# Cuenta cuantas letras hay en el texto
+cadena = "Pyton"
+# En este caso el método len() se pasa como una función, ya que no es un método específico sino una función global
+print(len(cadena)) # Devuelve 5 porque la palabra "Python" tiene 5 caracteres (letras)
+
 # Devuelve True o False si el texto empieza con algo (útil para validar extensiones de archivos como .jpg o .pdf)
 documento = "informe final.pdf"
 print(documento.startswith("informe"))
@@ -129,3 +134,6 @@ print(" ".join(palabras))
 # Se pasa como argumento la longitud total que se desea que tenga el string resultante, incluyendo los ceros
 numero = "90118"
 print(numero.zfill(10))  # Convierte el número a string y luego rellena con ceros a la izquierda hasta que tenga una longitud total de 10 caracteres en total, incluyendo los ceros
+
+# Para poder ver que métodos se pueden usar con un tipo de dato específico, se puede usar la función dir() y pasar como argumento el tipo de dato o una variable de ese tipo de dato
+print(dir(frase))
